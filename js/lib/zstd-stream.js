@@ -99,6 +99,7 @@ const onReady = (binding) => {
             else {
                 callback(new Error('ZstdDecompressTransform: Error on _final'));
             }
+            this.binding.delete();
         }
     }
 
